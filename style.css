@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+
+
+:root{
+    /* font */
+    -primary--font:'Mulish', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    /* border: 0; */
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+
+input[type=number]{
+    width: 20px;
+    margin: 0 5px ;
+}
+
+
+
+body ,#home{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    font:  var(-primary--font);
+    color: aliceblue;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home{
+background: top left /cover url("img/restaurant\ 1.png") no-repeat ;
+}
+.home section{
+    width: inherit;
+    height: inherit;
+}
+
+span{
+    font-weight: 800;
+}
+
+.prev,.next{
+    font-size: 50px;
+    justify-self: end;
+}
+
+h1{
+    font-size: 65px;
+    font-weight: 400;
+}
+
+.home-content{
+    max-width: 850px;
+    display: inline-block;
+}
+p{
+    font-size: 30px;
+
+}
+
