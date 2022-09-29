@@ -1,140 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap");
 
-
-:root{
-    /* font */
-    -primary--font:'Mulish', sans-serif;
+:root {
+  /* font */
+  -primary--font: "Mulish", sans-serif;
 }
 
-*{
-    box-sizing: border-box;
-    /* border: 0; */
-    margin: 0%;
-    padding: 0%;
-    list-style-type: none;
+* {
+  box-sizing: border-box;
+  /* border: 0; */
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
 }
 
-input[type=number]{
-    width: 20px;
-    margin: 0 5px ;
+input[type="number"] {
+  width: 20px;
+  margin: 0 5px;
 }
 
-
-
-body{
-    width: 100%;
-    height: 100vh;
-    /* display: flex;
+body {
+  width: 100%;
+  height: 100vh;
+  /* display: flex;
     justify-content: space-between; */
-    font:  var(-primary--font);
-    color: aliceblue;
-   
+  font: var(-primary--font);
+  color: aliceblue;
 }
 
 
-.home{
-background: top left /cover url("img/restaurant\ 1.png") no-repeat ;
-}
-.home section{
-    width: inherit;
-    height: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.home section {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.home span{
-    font-weight: 800;
+.home span {
+  font-weight: 800;
 }
 
-.prev,.next{
-    font-size: 50px;
-    justify-self: end;
-}
-
-.home h1{
-    font-size: 70px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
-}
-
-.home-content{
-    display: inline-block;
-}
-.home p{
-    font-size: 30px;
-    line-height: 1;
-}
-
-.home input[type=button]{
-    
-    width: 250px;
-    height: 80px;
-    margin: 50px 10px;
-    background: aliceblue;
-    font-size: 30px;
-}
-
-.logo{
-    font-weight: 800;
-}
-
-.nav{
-    background: rgb(29, 2, 2);
-    font-size: 40px;
-    border-radius: 20px;
-    width: fit-content;
-    display: inline-block;
-    height: 100%;
-    margin-right: 100px;
-}
-
-nav li{
-    width: 134px;
-    height: 122px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.prev,
+.next {
+  font-size: 50px;
+  justify-self: end;
 }
 
 
-.menu-container{
-    display: grid;
-    grid-template-columns: repeat(4 ,224px);
-    gap:10px 20px ;
-    color: aqua;
+.home h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
 }
 
-.menu-img{
-    height: 240px;
+.home-content {
+  display: inline-block;
+  text-align: center;
+}
+.home p {
+  font-size: 30px;
+  line-height: 1;
 }
 
-.menu_{
-    padding: 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
+.home input[type="button"] {
+  width: 250px;
+  height: 80px;
+  margin: 50px 10px;
+  background: aliceblue;
+  font-size: 30px;
 }
 
-.nav,.nav-content{ 
-    height: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.logo {
+  font-size: 60px;
+  font-weight: 800;
 }
 
-.load-more{
-    width: 154px;
-    height: 64px;
-    align-self: center;
-    font-size: 18px;
+.nav {
+  background: rgb(29, 2, 2);
+  font-size: 40px;
+  border-radius: 20px;
+  width: fit-content;
+  display: inline-block;
+  height: 100%;
+  margin-right: 100px;
+}
+nav {
+  height: 100%;
 }
 
-.heading{
-    text-decoration: underline pink;
-    font-size: 35px;
-    align-self: flex-start;
+nav li {
+  width: 134px;
+  height: 122px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  height: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 224px);
+  gap: 10px 20px;
+  color: black;
+}
+
+.menu-img {
+  height: 240px;
+}
+
+.menu_ {
+  padding: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.nav,
+.nav-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.load-more {
+  width: 154px;
+  height: 64px;
+  align-self: center;
+  font-size: 18px;
+}
+
+.heading {
+    color: black;
+  text-decoration: underline pink;
+  font-size: 35px;
+  align-self: flex-start;
+}
+
+.hidden{
+    display: none;
 }
