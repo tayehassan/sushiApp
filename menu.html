@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
     <script src="https://kit.fontawesome.com/0fe59ff773.js" crossorigin="anonymous"></script>
     <title>SUSHI APP </title>
 </head>
@@ -14,16 +14,16 @@
         <nav>
             <ul>
                 <li class="logo">S.</li>
-                <li><i class="fa-solid fa-house"></i></li>
-                <li><i class="fa-solid fa-utensils"></i></li>
-                <li><i class="fa-solid fa-cart-shopping"></i></li>
-                <li><i class="fa-solid fa-location-pin"></i></li>
-                <li><i class="fa-solid fa-right-from-bracket"></i></li>
+                <li class="nav-- 1" data-cur="1"><i class="fa-solid fa-house"></i></li>
+                <li class="nav-- 2" data-cur="2"><i class="fa-solid fa-utensils" ></i></li>
+                <li class="nav-- 3" data-cur="3"><i class="fa-solid fa-cart-shopping"></i></li>
+                <li class="nav-- 4" data-cur="4"><i class="fa-solid fa-location-pin"></i></li>
+                <li class="nav-- 5" data-cur="5"><i class="fa-solid fa-right-from-bracket"></i></li>
                
             </ul>
         </nav>
     </section>
-    <!-- <section class="nav-content nav-content-menu">
+    <section class="nav-content nav-content-menu" data-cur="1">
         <h1 class="heading heading-menu">SUSHI FOOD</h1>
         <ul class="menu-container">
             <li class="menu menu1">
@@ -69,7 +69,7 @@
     </ul>
     <input class="load-more" type="button" value="LOAD MORE"> 
     </section>-->
-    <section class="nav-content nav-content-cart">
+    <section class="nav-content nav-content-cart display-none" data-cur="2">
         <h1 class="heading heading-cart">CART</h1>
         <div class="cart-section">
             <ul class="cart-list-container">
@@ -97,5 +97,53 @@
         </div>
         
     </section>
+    <script>
+        
+const allNav = document.querySelectorAll(".nav--")
+
+console.log(allNav)
+
+
+
+allNav.forEach(i => {
+    i.addEventListener('click',function(){
+        allNav.forEach(i=>i.style.background='rgb(9, 2, 2)')
+        switch (i.dataset.cur) {
+            case '1':
+                console.log(i)
+            window.location='index.html'
+                break;
+            case '2':
+            document.querySelectorAll('.nav-content').forEach(element => {
+                element.classList.add('display-none')
+            });
+            document.querySelector('.nav-content-menu').classList.remove('display-none')
+            i.style.background='rgb(255,160,122)'
+                break;
+            case '3':
+            document.querySelectorAll('.nav-content').forEach(element => {
+                element.classList.add('display-none')
+            });
+            i.style.background='rgb(255,160,122)'
+            document.querySelector('.nav-content-cart').classList.remove('display-none')
+
+                break;
+            case '4':
+            
+                break;
+            case '5':
+            
+                break;
+                
+        
+            default:
+                break;
+        }
+    })
+    }
+    )
+
+console.log(allNav)
+    </script>
 </body>
 </html>
